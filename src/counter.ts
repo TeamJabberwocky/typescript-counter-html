@@ -5,19 +5,25 @@ const reset = document.getElementById("reset");
 
 class Counter {
   count: number;
-  constructor(count: number) {
-    this.count = count;
+  constructor() {
+    this.count = 0;
+    if (localStorage.getItem('number') !== null) {
+      this.count = parseInt(localStorage.getItem('number'));
+      console.log('something in local storage', this.count);
+  } else {
+      console.log('nothing in local storage', this.count);
   }
+}
 
   increment() {
-    console.log(this.count);
     this.count += 1;
+    console.log(this.count);
     this.render();
   }
   
   decrement() {
-    console.log(this.count)
     this.count -= 1;
+    console.log(this.count)
     this.render();
   }
 
@@ -27,13 +33,15 @@ class Counter {
   }
 
   render() {
-    let display = this.count.toString();
+    var display = this.count.toString();
+    localStorage.setItem('number', display);
     return htmlcount.innerText = display;
   }
 }
 
-const countie = new Counter(0);
+const countie = new Counter();
+countie.render()
 dec.addEventListener("click", (e: Event) => countie.decrement());
 inc.addEventListener("click", (e: Event) => countie.increment());
 reset.addEventListener("click", (e: Event) => countie.zero());
-console.log('hi');
+console.log('Welcome!');
