@@ -48,6 +48,15 @@ input{
   font-size: 0.75em;
   font-family: 'Patrick Hand', sans-serif;
   text-transform: uppercase;
+  animation: pulse 5s infinite;
+}
+@keyframes pulse {
+  0%, 100% {
+    background-color:  rgba(200, 207, 232, 0.75);
+  }
+  50% {
+    background-color:rgba(0, 122, 204, 0.5);
+  }
 }
 
 #plus{
