@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html>
-    <head><title>TypeScript Greeter</title></head>
+    <head>
+      <title>TypeScript Counter</title>
+      <link rel="stylesheet" type="text/css" href="./design/reset.css"/>
+
+      <link rel="stylesheet" type="text/css" href="./design/counter.css"/>   
+    </head>
     <body>
-      <span>
-        <input type="button" value="-" id="minus"></input>
-        <p id="counter"> 0 </p>
-        <input type="button" value="+" id="plus"></input>
-      </span>
-      <input type="button" value="reset" id="reset"></input>
+      <h1>
+        Team <em>JAB</em>berwocky's <em>TypeScript</em> Counter
+      </h1>
+      <section>
+          <span>
+              <input type="button" value="-" id="minus"></input>
+              <p id="counter"> 0 </p>
+              <input type="button" value="+" id="plus"></input>
+            </span>
+            <input type="button" value="reset" id="reset"></input>
+
+      </section>
+      
       <script src="counter.js"></script>
       
     </body>

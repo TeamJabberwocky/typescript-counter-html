@@ -14,7 +14,6 @@ class Counter {
     this.count += 1;
     this.render();
   }
-
   
   decrement() {
     console.log(this.count)
@@ -38,26 +37,3 @@ dec.addEventListener("click", (e: Event) => countie.decrement());
 inc.addEventListener("click", (e: Event) => countie.increment());
 reset.addEventListener("click", (e: Event) => countie.zero());
 console.log('hi');
-
-// class Counter {
-//     constructor() {
-//         let dec = document.getElementById("decrement");
-//         let inc = document.getElementById("increment");
-//         let counter = document.getElementById("counter");
-        // dec.addEventListener("click", (e) => this.decrement(this.counter));
-//         inc.addEventListener("click", (e) => this.increment(this.counter));
-//         console.log('hi')
-//     }
-    
-//     increment() {
-//         return this.counter += 1;
-//     }
-    
-//     decrement() {
-//         return this.counter -= 1;
-//     }
-    
-// }
-
-// console.log(new Counter)
-

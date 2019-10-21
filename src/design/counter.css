@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand|Raleway:500&display=swap');
+
+body{
+  background-image: url(https://images.unsplash.com/photo-1550985543-49bee3167284?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  font-family: 'Patrick Hand', 'Raleway', sans-serif;
+  font-size:1.5em;
+}
+
+h1{
+  font-size: 2em;
+  background: rgb(200, 207, 232, 0.95);
+  padding: 40px;
+  width:100%;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+section{
+  margin:5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: rgba(128, 128, 128, 0.139) 5px solid;
+  background: rgba(128, 128, 128, 0.5);
+  width:30%;
+}
+
+span{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+  padding: 10%;
+  width: 30%;
+  flex-grow: 1;
+}
+
+input{
+  color: white;
+  background-color: rgba(200, 207, 232, 0.75);
+  border:none;
+  width:15%;
+  flex-grow: 1;
+  font-size: 0.75em;
+  font-family: 'Patrick Hand', sans-serif;
+  text-transform: uppercase;
+}
+
+#plus{
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  width:100%;
+  font-size:1.5em;
+}
+
+#minus{
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  width:100%;
+  font-size:1.5em;
+}
+
+p{
+  background: rgba(0, 0, 0, 0.8);
+  color:white;
+  padding:10%;
+  margin:10px;
+  text-align: center;
+  font-family: 'Patrick Hand', sans-serif;
+}
+
+em, input:hover{
+  color:#007acc;
+}
